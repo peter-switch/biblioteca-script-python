@@ -7,11 +7,20 @@ class Libro:
         self.isbn = isbn         
         self.disponible = True  
 
+
+
+
 # Lista para almacenar los libros
+
+
 biblioteca = []
 
 
+
+
 # 1.Función para agregar un nuevo libro a la lista biblioteca mediante inputs del usuario
+
+
 def agregar():
   
     print("\nAgregar un nuevo libro:\n")
@@ -29,11 +38,15 @@ def agregar():
 
 # 2. Función para prestar un libro a apartir de su ISBN
 
+
 def prestar():
 
     isbn = input("\n> Introduce el ISBN: ") #Usuario introduce el ISBN
+
     libro_encontrado = False #Variable para saber si se ha encontrado el libro. Por defecto se pone en False
+
     for libro in biblioteca: #Recorre la lista de libros con un bucle for
+
         if libro.isbn == isbn: #si el ISBN del libro es igual al ISBN introducido por el usario.
 
             if libro.disponible == True:
@@ -47,9 +60,11 @@ def prestar():
                  print(f"\n- {libro.titulo} ({libro.autor}) - ISBN: {libro.isbn} - No está disponible.\n") 
 
             libro_encontrado = True #Libro encontrado cambia a True
+
             break #Hemos encontrado el libro, salimos del bucle
 
     if libro_encontrado==False:
+
         print("\n[!] No existe ese ISBN\n")
 
 
@@ -59,8 +74,11 @@ def prestar():
 def devolver():
 
     isbn = input("\n> Introduce el ISBN: ") #Usuario introduce el ISBN
+
     libro_encontrado = False #Variable para saber si se ha encontrado el libro. Por defecto se pone en False
+
     for libro in biblioteca: #Recorre la lista de libros con un bucle for
+
         if libro.isbn == isbn: #si el ISBN del libro es igual al ISBN introducido por el usario.
 
             if libro.disponible == False:
@@ -74,9 +92,11 @@ def devolver():
                  print(f"\n- {libro.titulo} ({libro.autor}) - ISBN: {libro.isbn} - Libro disponible para prestar.\n") 
 
             libro_encontrado = True #Libro encontrado cambia a True
+
             break #Hemos encontrado el libro, salimos del bucle
 
     if libro_encontrado==False:
+
         print("\n[!] No existe ese ISBN\n")
 
 
@@ -84,12 +104,17 @@ def devolver():
 # 4. Función para mostrar todos los libros y su estado
 
 def mostrar():
+
     if not biblioteca:
+
         print("\nNo hay libros guardados.")
+
     else:
+
         print("\nLibros disponibles:")
       
         for libro in biblioteca:
+
             #Imprime los datos de los libros don un format
             print(f"\n- {libro.titulo} ({libro.autor}) - ISBN: {libro.isbn} - Disponible: {'Sí' if libro.disponible else 'No'}")      
 
@@ -101,13 +126,21 @@ def mostrar():
 def buscar():
 
     isbn = input("\n> Introduce el ISBN: ") #Usuario introduce el ISBN
+
     libro_encontrado = False #Variable para saber si se ha encontrado el libro de inicio se pone en False
+
     for libro in biblioteca: #Recorre la lista de libros con un bucle for
+
         if libro.isbn == isbn: #si el ISBN del libro es igual al ISBN introducido por el usuario se imprime los datos del libro
+
             print(f"\n- {libro.titulo} ({libro.autor}) - ISBN: {libro.isbn} - Disponible: {'Sí' if libro.disponible else 'No'}\n") 
+
             libro_encontrado = True #Libro encontrado se pone en True
+
             break #Hemos encontrado el libro, salimos del bucle
+
     if libro_encontrado==False:
+
         print("\n[!] No existe ese ISBN/n")
 
 
@@ -118,7 +151,9 @@ def buscar():
 # Menú principal
 
 print("\nBienvenido al Sistema de Gestión de Biblioteca\n")
+
 while True: #Es una forma de generar un bucle infinito y que el menú siempre esté presente hasta que entre un break
+
     #Las opciones disponibles en el menú que ve el usuario
     print("1. Agregar libro")
     print("2. Prestar libro")
@@ -145,15 +180,22 @@ while True: #Es una forma de generar un bucle infinito y que el menú siempre es
          buscar()
     
     elif opcion == "6":
+         
          print("\nSaliendo del Sistema de Gestión de Biblioteca...")
+
          print("Hasta la próxima")
+
          break #Salir del bucle infinito
 
     else:
+        
         print("Opción no válida. Por favor, seleccionar una opción válida.")
 
 
 
 
-# Script creado por Pedro para el curso de Python organizado por Bejob 2025.
-# tsid.pedro.garrido@gmail.com
+""" 
+    Script creado por Pedro Garrido para el curso de Python organizado por Bejob 2025.
+    tsid.pedro.garrido@gmail.com  
+
+"""
