@@ -146,8 +146,6 @@ def buscar():
 
           
    
-
-
 # Menú principal
 
 print("\nBienvenido al Sistema de Gestión de Biblioteca\n")
@@ -188,7 +186,7 @@ while True: #Es una forma de generar un bucle infinito y que el menú siempre es
          break #Salir del bucle infinito
 
     else:
-        
+
         print("Opción no válida. Por favor, seleccionar una opción válida.")
 
 
