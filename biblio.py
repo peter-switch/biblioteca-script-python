@@ -1,4 +1,3 @@
-
 # Creando la clase Libro
 
 class Libro:
@@ -12,7 +11,7 @@ class Libro:
 biblioteca = []
 
 
-#1.Función para agregar un nuevo libro a la lista biblioteca mediante inputs del usuario
+# 1.Función para agregar un nuevo libro a la lista biblioteca mediante inputs del usuario
 def agregar():
   
     print("\nAgregar un nuevo libro:\n")
@@ -25,7 +24,11 @@ def agregar():
     biblioteca.append(nuevo_libro)
     print(f"\nTítulo: {titulo}\nAutor:{autor}\nISBN:{isbn}\nLibro agregado con éxito.\n")
 
-#2. Función para prestar un libro a apartir de su ISBN
+
+
+
+# 2. Función para prestar un libro a apartir de su ISBN
+
 def prestar():
 
     isbn = input("\n> Introduce el ISBN: ") #Usuario introduce el ISBN
@@ -50,7 +53,9 @@ def prestar():
         print("\n[!] No existe ese ISBN\n")
 
 
-#3. Función para devolver un libro a apartir de su ISBN
+
+# 3. Función para devolver un libro a apartir de su ISBN
+
 def devolver():
 
     isbn = input("\n> Introduce el ISBN: ") #Usuario introduce el ISBN
@@ -76,7 +81,8 @@ def devolver():
 
 
 
-#4. Función para mostrar todos los libros y su estado
+# 4. Función para mostrar todos los libros y su estado
+
 def mostrar():
     if not biblioteca:
         print("\nNo hay libros guardados.")
@@ -86,6 +92,8 @@ def mostrar():
         for libro in biblioteca:
             #Imprime los datos de los libros don un format
             print(f"\n- {libro.titulo} ({libro.autor}) - ISBN: {libro.isbn} - Disponible: {'Sí' if libro.disponible else 'No'}")      
+
+
 
 
 #5. Función para buscar un libro por su ISBN
@@ -105,7 +113,10 @@ def buscar():
 
           
    
+
+
 # Menú principal
+
 print("\nBienvenido al Sistema de Gestión de Biblioteca\n")
 while True: #Es una forma de generar un bucle infinito y que el menú siempre esté presente hasta que entre un break
     #Las opciones disponibles en el menú que ve el usuario
@@ -140,3 +151,9 @@ while True: #Es una forma de generar un bucle infinito y que el menú siempre es
 
     else:
         print("Opción no válida. Por favor, seleccionar una opción válida.")
+
+
+
+
+# Script creado por Pedro para el curso de Python organizado por Bejob 2025.
+# tsid.pedro.garrido@gmail.com
