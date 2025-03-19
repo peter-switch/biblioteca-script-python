@@ -8,18 +8,12 @@ class Libro:
         self.disponible = True  
 
 
-
-
 # Lista para almacenar los libros
 
 
 biblioteca = []
 
-
-
-
 # 1.Función para agregar un nuevo libro a la lista biblioteca mediante inputs del usuario
-
 
 def agregar():
   
@@ -32,8 +26,6 @@ def agregar():
     nuevo_libro = Libro(titulo, autor, isbn)
     biblioteca.append(nuevo_libro)
     print(f"\nTítulo: {titulo}\nAutor:{autor}\nISBN:{isbn}\nLibro agregado con éxito.\n")
-
-
 
 
 # 2. Función para prestar un libro a apartir de su ISBN
@@ -68,8 +60,8 @@ def prestar():
         print("\n[!] No existe ese ISBN\n")
 
 
-
 # 3. Función para devolver un libro a apartir de su ISBN
+
 
 def devolver():
 
@@ -99,8 +91,6 @@ def devolver():
 
         print("\n[!] No existe ese ISBN\n")
 
-
-
 # 4. Función para mostrar todos los libros y su estado
 
 def mostrar():
@@ -117,9 +107,6 @@ def mostrar():
 
             #Imprime los datos de los libros don un format
             print(f"\n- {libro.titulo} ({libro.autor}) - ISBN: {libro.isbn} - Disponible: {'Sí' if libro.disponible else 'No'}")      
-
-
-
 
 #5. Función para buscar un libro por su ISBN
 
@@ -143,9 +130,6 @@ def buscar():
 
         print("\n[!] No existe ese ISBN/n")
 
-
-          
-   
 # Menú principal
 
 print("\nBienvenido al Sistema de Gestión de Biblioteca\n")
@@ -189,11 +173,8 @@ while True: #Es una forma de generar un bucle infinito y que el menú siempre es
 
         print("Opción no válida. Por favor, seleccionar una opción válida.")
 
-
-
-
 """ 
-    Script creado por Pedro Garrido para el curso de Python organizado por Bejob 2025.
-    tsid.pedro.garrido@gmail.com  
-
+    - Script creado para el curso de Python organizado por Bejob 2025.
+    - https://github.com/peter-switch
+    - info@electricoo.com
 """
