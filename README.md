@@ -1,6 +1,6 @@
 # Biblioteca.py 📚
 
-¡Bienvenid@ a *Biblioteca.py*! 🎉 Este es mi primer script en Python, creado con amor (y un poco de sudor) durante el curso de iniciación a Python organizado por Bejob 2025. Si estás aquí, probablemente te interesa la programación, los libros o simplemente te has perdido en GitHub. En cualquier caso, ¡quédate un rato! 😄
+¡Bienvenid@ a *Biblio.py*! 🎉 Este es mi primer script en Python, creado con amor (y un poco de sudor) durante el curso de iniciación a Python organizado por Bejob 2025. Si estás aquí, probablemente te interesa la programación, los libros o simplemente te has perdido en GitHub. En cualquier caso, ¡quédate un rato! 😄
 
 ## 📖 ¿De qué va esto?
 Este script es un pequeño gestor de biblioteca que permite hacer lo siguiente:
@@ -20,17 +20,7 @@ Básicamente, si alguna vez soñaste con ser bibliotecari@ pero sin el estrés d
 3. Ábrelo en la terminal o en tu IDE favorito.
 4. Ejecuta el comando:
    ```bash
-   python biblioteca.py
+   python biblio.py
    ```
-5. Sigue las instrucciones y empieza a gestionar tu biblioteca como un pro.
-
-## 🚀 Futuras mejoras
-Esto es solo el comienzo. Algunas ideas para futuras versiones:
-- Guardar los libros en un archivo para que no desaparezcan como lágrimas en la lluvia cada vez que cierras el programa.
-- Implementar una interfaz gráfica para los amantes de los botones bonitos.
-- Añadir un sistema de usuarios para que cada uno tenga su propia lista de libros prestados.
-
-## 🤝 Contribuciones
-Si tienes alguna idea o quieres mejorar el código, ¡adelante! Se aceptan pull requests, sugerencias y memes de programadores. 😜
-
+   
 ¡Gracias por pasarte por aquí y feliz programación! 🖥📚
