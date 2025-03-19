@@ -6,10 +6,15 @@
 Este script es un pequeño gestor de biblioteca que permite hacer lo siguiente:
 
 1️⃣ Agregar un libro
+
 2️⃣ Prestar un libro
+
 3️⃣ Devolver un libro
+
 4️⃣ Mostrar los libros disponibles
+
 5️⃣ Buscar un libro
+
 6️⃣ Salir (cuando la vida te llama)
 
 Básicamente, si alguna vez soñaste con ser bibliotecari@ pero sin el estrés de los retrasos en las devoluciones, este script es para ti. 📚💻
