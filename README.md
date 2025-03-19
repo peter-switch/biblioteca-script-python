@@ -19,6 +19,7 @@ Básicamente, si alguna vez soñaste con ser bibliotecari@ pero sin el estrés d
 2. Descarga el script.
 3. Ábrelo en la terminal o en tu IDE favorito.
 4. Ejecuta el comando:
+   
    ```bash
    python biblio.py
    ```
